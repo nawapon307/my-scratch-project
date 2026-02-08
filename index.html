@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nawapon PC Project's</title>
+<title>My PC projects & PC Build</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -34,7 +34,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 260px;
+  width: 270px;
   background: var(--glass);
   backdrop-filter: blur(25px);
   border-right: 1px solid var(--border);
@@ -46,7 +46,7 @@ body {
 .logo {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .tab {
@@ -87,30 +87,19 @@ body {
 }
 
 @keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 800;
-}
-
-h2 {
-  margin-top: 50px;
-  font-size: 28px;
 }
 
 p {
   color: var(--muted);
   margin-top: 20px;
-  max-width: 680px;
+  max-width: 720px;
   font-size: 18px;
 }
 
@@ -135,19 +124,27 @@ p {
   transform: translateY(-8px);
 }
 
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #5fb3ff, #357dff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* MOBILE */
 @media (max-width: 900px) {
-  body {
-    flex-direction: column;
-  }
+  body { flex-direction: column; }
   .sidebar {
     width: 100%;
     flex-direction: row;
     overflow-x: auto;
   }
-  .tab {
-    white-space: nowrap;
-  }
+  .tab { white-space: nowrap; }
 }
 </style>
 </head>
@@ -155,94 +152,78 @@ p {
 <body>
 
 <div class="sidebar">
-  <div class="logo">Nawapon PC Project's</div>
-  <div class="tab active" data-tab="overview">🖥 Overview</div>
-  <div class="tab" data-tab="specs">⚙ Specs</div>
-  <div class="tab" data-tab="performance">🚀 Performance</div>
-  <div class="tab" data-tab="upgrade">🔧 Upgrades</div>
+  <div class="logo">My PC projects & PC Build PC</div>
+  <div class="tab active" data-tab="overview">🖥 สเปคคอม</div>
+  <div class="tab" data-tab="specs">⚙ สเปคคอมทั้งหมด</div>
+  <div class="tab" data-tab="why build this">ทำไมถึงประกอบ</div>
+  <div class="tab" data-tab="upgrade">🔧 แผนในอนาคต</div>
+  <div class="tab" data-tab="youtube">▶ YouTube</div>
+  <div class="tab" data-tab="facebook">📘 Facebook</div>
+  <div class="tab" data-tab="instagram">📸 Instagram</div>
 </div>
 
 <div class="main">
 
   <!-- OVERVIEW -->
   <div class="content active" id="overview">
-    <h1>My Build</h1>
-    <p>
-      A clean, powerful PC build designed for performance, stability, and value.
-      Built to handle gaming, productivity, and daily use with style.
-    </p>
+    <h1>สเปคคอม</h1>
+    <p>ที่ใช้อยู่ตอนนี้</p>
 
     <div class="cards">
-      <div class="card">
-        <h3>⚡ Reliable Power</h3>
-        <p>Xeon E3-1240 delivers workstation-grade stability.</p>
-      </div>
-      <div class="card">
-        <h3>🎮 Solid Gaming</h3>
-        <p>GTX 1070 handles 1080p gaming smoothly.</p>
-      </div>
-      <div class="card">
-        <h3>🚀 Fast Storage</h3>
-        <p>480GB SSD for quick boot and load times.</p>
-      </div>
+      <div class="card"><h3>CPU</h3><p>Xeon E3-1240</p></div>
+      <div class="card"><h3>RAM</h3><p>16GB DDR3</p></div>
+      <div class="card"><h3>GPU</h3><p>GTX 1070[P104-100]</p></div>
     </div>
   </div>
 
   <!-- SPECS -->
   <div class="content" id="specs">
-    <h1>Specifications</h1>
+    <h1>สเปคคอมทั้งหมด</h1>
     <div class="cards">
       <div class="card"><h3>CPU</h3><p>Intel Xeon E3-1240</p></div>
-      <div class="card"><h3>Memory</h3><p>16GB DDR3 RAM</p></div>
+      <div class="card"><h3>Memory</h3><p>16GB RAM</p></div>
       <div class="card"><h3>Storage</h3><p>480GB SSD</p></div>
-      <div class="card"><h3>Graphics</h3><p>NVIDIA GTX 1070</p></div>
+      <div class="card"><h3>Graphics</h3><p>NVIDIA GTX 1070[P104-100]</p></div>
     </div>
   </div>
 
   <!-- PERFORMANCE -->
-  <div class="content" id="performance">
-    <h1>Performance</h1>
-    <p>
-      Optimized for smooth multitasking, esports titles, and creative workloads.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>🎮 Gaming</h3>
-        <p>1080p high settings in most competitive games.</p>
-      </div>
-      <div class="card">
-        <h3>🧠 Productivity</h3>
-        <p>Excellent for coding, editing, and multitasking.</p>
-      </div>
-      <div class="card">
-        <h3>❄ Thermals</h3>
-        <p>Stable temps with proper airflow.</p>
-      </div>
-    </div>
+  <div class="content" id="why build this">
+    <h1>เราเน้นประกอบแบบไหน?</h1>
+    <p>เน้นถูกเน้นแรง</p>
   </div>
 
   <!-- UPGRADES -->
   <div class="content" id="upgrade">
-    <h1>Future Upgrades</h1>
-    <p>
-      Planned improvements to push this build even further.
-    </p>
-
+    <h1>แผนในอนาคต</h1>
     <div class="cards">
-      <div class="card">
-        <h3>⬆ GPU</h3>
-        <p>Upgrade to RTX series when possible.</p>
-      </div>
-      <div class="card">
-        <h3>💾 Storage</h3>
-        <p>Add NVMe or secondary SSD.</p>
-      </div>
-      <div class="card">
-        <h3>🧊 Cooling</h3>
-        <p>Improved airflow or AIO cooler.</p>
-      </div>
+      <div class="card"><h3>GPU</h3><p>จะใช้RTX Series</p></div>
+      <div class="card"><h3>Storage</h3><p>เพิ่ม SSD / NVMe</p></div>
+      <div class="card"><h3>Cooling</h3><p>เคสใหม่และชุดนน้ำระบบปิด</p></div>
+	  <div class="card"><h3>CPU</h3><p>เปลี่ยนเป็น intel gen 11th i9 ES</p></div>
     </div>
+  </div>
+
+
+  <!-- YOUTUBE -->
+  <div class="content" id="youtube">
+    <h1>YouTube</h1>
+    <p>PC builds, benchmarks, tutorials, and gaming content.</p>
+    <a class="btn" href="https://www.youtube.com/@S_64332" target="_blank">Visit Channel</a>
+  </div>
+
+  <!-- FACEBOOK -->
+  <div class="content" id="facebook">
+    <h1>Facebook</h1>
+    <p>Updates, posts, and community discussions.</p>
+    <a class="btn" href="https://facebook.com" target="_blank">Open Facebook</a>
+  </div>
+
+  <!-- INSTAGRAM -->
+  <div class="content" id="instagram">
+    <h1>Instagram</h1>
+    <p>Build photos, setup shots, and behind-the-scenes.</p>
+    <a class="btn" href="https://instagram.com" target="_blank">Open Instagram</a>
   </div>
 
 </div>
@@ -255,7 +236,6 @@ tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     tabs.forEach(t => t.classList.remove('active'));
     contents.forEach(c => c.classList.remove('active'));
-
     tab.classList.add('active');
     document.getElementById(tab.dataset.tab).classList.add('active');
   });
